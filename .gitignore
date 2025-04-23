@@ -1,0 +1,50 @@
+# Docker-related ignores
+Dockerfile.local
+docker-compose.override.yml
+*.dockerignore
+*.log
+Dockerfile.dev
+docker-compose.dev.yml
+docker-compose.yml.bak
+
+# Docker volumes and data (Vault-specific)
+vault-volume/
+vault-data/
+vault-file/
+vault-logs/
+vault-config/
+*.key
+*.crt
+*.pem
+
+# Vault-specific ignores
+unseal-keys.txt
+root-token.txt
+vault-token
+.vault-token
+vault-secrets.env
+*.hcl
+*.json  # If used for Vault config, be cautious
+
+# General build and runtime artifacts
+*.tar
+*.tar.gz
+*.pid
+*.seed
+*.pid.lock
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Ignore local development directories
+.vscode/
+.idea/
+*.DS_Store

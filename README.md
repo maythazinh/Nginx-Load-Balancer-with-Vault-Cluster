@@ -1,7 +1,9 @@
 ![alt text](block-diagram.png)
 
 
-Directory Structure
+## Directory Structure
+
+```
 .
 ├── docker-compose.yaml           # Main configuration file
 ├── unseal-script/                # Contains initialization scripts
@@ -15,6 +17,7 @@ Directory Structure
     │   └── nginx.conf            # NGINX configuration
     ├── certs/                    # SSL certificates
     └── logs/                     # NGINX logs
+```
 
 
 Architecture Overview
@@ -43,3 +46,8 @@ Getting Started
 Ensure Docker and Docker Compose are installed on your system
 Clone this repository
 Run start.sh
+
+
+
+
+

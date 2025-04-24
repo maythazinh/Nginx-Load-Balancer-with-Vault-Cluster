@@ -20,31 +20,39 @@
 ```
 
 
-Architecture Overview
-
+## Architecture Overview
 
 3 Vault server nodes in a Raft-based HA cluster
+
 NGINX load balancer with SSL termination
+
 Docker volumes for persistent storage
+
 Initialization and auto-unseal scripts
 
-Components
+## Components
 
 Based on hashicorp/vault:1.19 Docker image
+
 Configured in a high-availability cluster using the Raft storage backend
+
 Server 1 acts as the initializing node for the cluster
+
 Servers 2 and 3 automatically join the Raft cluster
 
-Load Balancer
+## Load Balancer
 
-NGINX for distributing requests across all Vault nodes
+NGINX for distributing requests across all Vault nodes  
+
 SSL termination (port 9443)
 
 
-Getting Started
+## Getting Started
 
 Ensure Docker and Docker Compose are installed on your system
+
 Clone this repository
+
 Run start.sh
 
 
